@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D94EB01C189AF3CA005EB8D8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94EAFD0189AEE32005EB8D8 /* SenTestingKit.framework */; };
+		D94EB01D189AF3CA005EB8D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AE6189AE4E700DC6BC3 /* CoreGraphics.framework */; };
+		D94EB01E189AF3CA005EB8D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AE8189AE4E700DC6BC3 /* UIKit.framework */; };
+		D94EB01F189AF3CA005EB8D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AE4189AE4E700DC6BC3 /* Foundation.framework */; };
+		D94EB025189AF3CA005EB8D8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D94EB023189AF3CA005EB8D8 /* InfoPlist.strings */; };
+		D94EB027189AF3CA005EB8D8 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D94EB026189AF3CA005EB8D8 /* ExampleSpec.mm */; };
+		D94EB02A189AF3CB005EB8D8 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D94EB029189AF3CB005EB8D8 /* Cedar-iOS.framework */; };
 		D9994AE5189AE4E700DC6BC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AE4189AE4E700DC6BC3 /* Foundation.framework */; };
 		D9994AE7189AE4E700DC6BC3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AE6189AE4E700DC6BC3 /* CoreGraphics.framework */; };
 		D9994AE9189AE4E700DC6BC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AE8189AE4E700DC6BC3 /* UIKit.framework */; };
@@ -14,24 +21,17 @@
 		D9994AF1189AE4E700DC6BC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9994AF0189AE4E700DC6BC3 /* main.m */; };
 		D9994AF5189AE4E700DC6BC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9994AF4189AE4E700DC6BC3 /* AppDelegate.m */; };
 		D9994AF7189AE4E700DC6BC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9994AF6189AE4E700DC6BC3 /* Images.xcassets */; };
-		D9994AFE189AE4E700DC6BC3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AFD189AE4E700DC6BC3 /* XCTest.framework */; };
-		D9994AFF189AE4E700DC6BC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AE4189AE4E700DC6BC3 /* Foundation.framework */; };
-		D9994B00189AE4E700DC6BC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AE8189AE4E700DC6BC3 /* UIKit.framework */; };
-		D9994B08189AE4E700DC6BC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9994B06189AE4E700DC6BC3 /* InfoPlist.strings */; };
-		D9994B0A189AE4E700DC6BC3 /* EKTilesMakerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9994B09189AE4E700DC6BC3 /* EKTilesMakerDemoTests.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D9994B01189AE4E700DC6BC3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D9994AD9189AE4E700DC6BC3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D9994AE0189AE4E700DC6BC3;
-			remoteInfo = EKTilesMakerDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		D94EAFD0189AEE32005EB8D8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D94EB01B189AF3CA005EB8D8 /* EKTilesMakerUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EKTilesMakerUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94EB022189AF3CA005EB8D8 /* EKTilesMakerUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EKTilesMakerUnitTests-Info.plist"; sourceTree = "<group>"; };
+		D94EB024189AF3CA005EB8D8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D94EB026189AF3CA005EB8D8 /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
+		D94EB028189AF3CA005EB8D8 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		D94EB029189AF3CB005EB8D8 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
+		D94EB02B189AF3CB005EB8D8 /* EKTilesMakerUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EKTilesMakerUnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		D9994AE1189AE4E700DC6BC3 /* EKTilesMakerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EKTilesMakerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9994AE4189AE4E700DC6BC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D9994AE6189AE4E700DC6BC3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -43,14 +43,21 @@
 		D9994AF3189AE4E700DC6BC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D9994AF4189AE4E700DC6BC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D9994AF6189AE4E700DC6BC3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D9994AFC189AE4E700DC6BC3 /* EKTilesMakerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EKTilesMakerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9994AFD189AE4E700DC6BC3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D9994B05189AE4E700DC6BC3 /* EKTilesMakerDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EKTilesMakerDemoTests-Info.plist"; sourceTree = "<group>"; };
-		D9994B07189AE4E700DC6BC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D9994B09189AE4E700DC6BC3 /* EKTilesMakerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKTilesMakerDemoTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D94EB017189AF3CA005EB8D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94EB01D189AF3CA005EB8D8 /* CoreGraphics.framework in Frameworks */,
+				D94EB01E189AF3CA005EB8D8 /* UIKit.framework in Frameworks */,
+				D94EB02A189AF3CB005EB8D8 /* Cedar-iOS.framework in Frameworks */,
+				D94EB01C189AF3CA005EB8D8 /* SenTestingKit.framework in Frameworks */,
+				D94EB01F189AF3CA005EB8D8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9994ADE189AE4E700DC6BC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,24 +68,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9994AF9189AE4E700DC6BC3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9994AFE189AE4E700DC6BC3 /* XCTest.framework in Frameworks */,
-				D9994B00189AE4E700DC6BC3 /* UIKit.framework in Frameworks */,
-				D9994AFF189AE4E700DC6BC3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D94EB020189AF3CA005EB8D8 /* EKTilesMakerUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D94EB026189AF3CA005EB8D8 /* ExampleSpec.mm */,
+				D94EB028189AF3CA005EB8D8 /* Rakefile */,
+				D94EB029189AF3CB005EB8D8 /* Cedar-iOS.framework */,
+				D94EB021189AF3CA005EB8D8 /* Supporting Files */,
+			);
+			path = EKTilesMakerUnitTests;
+			sourceTree = "<group>";
+		};
+		D94EB021189AF3CA005EB8D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D94EB022189AF3CA005EB8D8 /* EKTilesMakerUnitTests-Info.plist */,
+				D94EB023189AF3CA005EB8D8 /* InfoPlist.strings */,
+				D94EB02B189AF3CB005EB8D8 /* EKTilesMakerUnitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D9994AD8189AE4E700DC6BC3 = {
 			isa = PBXGroup;
 			children = (
 				D9994AEA189AE4E700DC6BC3 /* EKTilesMakerDemo */,
-				D9994B03189AE4E700DC6BC3 /* EKTilesMakerDemoTests */,
+				D94EB020189AF3CA005EB8D8 /* EKTilesMakerUnitTests */,
 				D9994AE3189AE4E700DC6BC3 /* Frameworks */,
 				D9994AE2189AE4E700DC6BC3 /* Products */,
 			);
@@ -88,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				D9994AE1189AE4E700DC6BC3 /* EKTilesMakerDemo.app */,
-				D9994AFC189AE4E700DC6BC3 /* EKTilesMakerDemoTests.xctest */,
+				D94EB01B189AF3CA005EB8D8 /* EKTilesMakerUnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,7 +117,7 @@
 				D9994AE4189AE4E700DC6BC3 /* Foundation.framework */,
 				D9994AE6189AE4E700DC6BC3 /* CoreGraphics.framework */,
 				D9994AE8189AE4E700DC6BC3 /* UIKit.framework */,
-				D9994AFD189AE4E700DC6BC3 /* XCTest.framework */,
+				D94EAFD0189AEE32005EB8D8 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,27 +144,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D9994B03189AE4E700DC6BC3 /* EKTilesMakerDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				D9994B09189AE4E700DC6BC3 /* EKTilesMakerDemoTests.m */,
-				D9994B04189AE4E700DC6BC3 /* Supporting Files */,
-			);
-			path = EKTilesMakerDemoTests;
-			sourceTree = "<group>";
-		};
-		D9994B04189AE4E700DC6BC3 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D9994B05189AE4E700DC6BC3 /* EKTilesMakerDemoTests-Info.plist */,
-				D9994B06189AE4E700DC6BC3 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D94EB01A189AF3CA005EB8D8 /* EKTilesMakerUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D94EB02C189AF3CB005EB8D8 /* Build configuration list for PBXNativeTarget "EKTilesMakerUnitTests" */;
+			buildPhases = (
+				D94EB016189AF3CA005EB8D8 /* Sources */,
+				D94EB017189AF3CA005EB8D8 /* Frameworks */,
+				D94EB018189AF3CA005EB8D8 /* Resources */,
+				D94EB019189AF3CA005EB8D8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EKTilesMakerUnitTests;
+			productName = EKTilesMakerUnitTests;
+			productReference = D94EB01B189AF3CA005EB8D8 /* EKTilesMakerUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		D9994AE0189AE4E700DC6BC3 /* EKTilesMakerDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9994B0D189AE4E700DC6BC3 /* Build configuration list for PBXNativeTarget "EKTilesMakerDemo" */;
@@ -164,24 +182,6 @@
 			productReference = D9994AE1189AE4E700DC6BC3 /* EKTilesMakerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D9994AFB189AE4E700DC6BC3 /* EKTilesMakerDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D9994B10189AE4E700DC6BC3 /* Build configuration list for PBXNativeTarget "EKTilesMakerDemoTests" */;
-			buildPhases = (
-				D9994AF8189AE4E700DC6BC3 /* Sources */,
-				D9994AF9189AE4E700DC6BC3 /* Frameworks */,
-				D9994AFA189AE4E700DC6BC3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D9994B02189AE4E700DC6BC3 /* PBXTargetDependency */,
-			);
-			name = EKTilesMakerDemoTests;
-			productName = EKTilesMakerDemoTests;
-			productReference = D9994AFC189AE4E700DC6BC3 /* EKTilesMakerDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,7 +191,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Evgeniy Kirpichenko";
 				TargetAttributes = {
-					D9994AFB189AE4E700DC6BC3 = {
+					D94EB01A189AF3CA005EB8D8 = {
 						TestTargetID = D9994AE0189AE4E700DC6BC3;
 					};
 				};
@@ -209,12 +209,20 @@
 			projectRoot = "";
 			targets = (
 				D9994AE0189AE4E700DC6BC3 /* EKTilesMakerDemo */,
-				D9994AFB189AE4E700DC6BC3 /* EKTilesMakerDemoTests */,
+				D94EB01A189AF3CA005EB8D8 /* EKTilesMakerUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D94EB018189AF3CA005EB8D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94EB025189AF3CA005EB8D8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9994ADF189AE4E700DC6BC3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,17 +232,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9994AFA189AE4E700DC6BC3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D94EB019189AF3CA005EB8D8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9994B08189AE4E700DC6BC3 /* InfoPlist.strings in Resources */,
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D94EB016189AF3CA005EB8D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94EB027189AF3CA005EB8D8 /* ExampleSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
 		D9994ADD189AE4E700DC6BC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,25 +268,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D9994AF8189AE4E700DC6BC3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D9994B0A189AE4E700DC6BC3 /* EKTilesMakerDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		D9994B02189AE4E700DC6BC3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D9994AE0189AE4E700DC6BC3 /* EKTilesMakerDemo */;
-			targetProxy = D9994B01189AE4E700DC6BC3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
+		D94EB023189AF3CA005EB8D8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D94EB024189AF3CA005EB8D8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		D9994AED189AE4E700DC6BC3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -271,17 +287,65 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		D9994B06189AE4E700DC6BC3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D9994B07189AE4E700DC6BC3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D94EB02D189AF3CB005EB8D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EKTilesMakerDemo.app/EKTilesMakerDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/kirpichenko/Projects/EKTilesMaker/EKTilesMakerDemo/EKTilesMakerUnitTests/Frameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EKTilesMakerUnitTests/EKTilesMakerUnitTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EKTilesMakerUnitTests/EKTilesMakerUnitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D94EB02E189AF3CB005EB8D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EKTilesMakerDemo.app/EKTilesMakerDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Users/kirpichenko/Projects/EKTilesMaker/EKTilesMakerDemo/EKTilesMakerUnitTests/Frameworks,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EKTilesMakerUnitTests/EKTilesMakerUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "EKTilesMakerUnitTests/EKTilesMakerUnitTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		D9994B0B189AE4E700DC6BC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -315,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -348,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -382,51 +446,17 @@
 			};
 			name = Release;
 		};
-		D9994B11189AE4E700DC6BC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EKTilesMakerDemo.app/EKTilesMakerDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EKTilesMakerDemo/EKTilesMakerDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "EKTilesMakerDemoTests/EKTilesMakerDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		D9994B12189AE4E700DC6BC3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EKTilesMakerDemo.app/EKTilesMakerDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EKTilesMakerDemo/EKTilesMakerDemo-Prefix.pch";
-				INFOPLIST_FILE = "EKTilesMakerDemoTests/EKTilesMakerDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D94EB02C189AF3CB005EB8D8 /* Build configuration list for PBXNativeTarget "EKTilesMakerUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D94EB02D189AF3CB005EB8D8 /* Debug */,
+				D94EB02E189AF3CB005EB8D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D9994ADC189AE4E700DC6BC3 /* Build configuration list for PBXProject "EKTilesMakerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -443,14 +473,7 @@
 				D9994B0F189AE4E700DC6BC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		D9994B10189AE4E700DC6BC3 /* Build configuration list for PBXNativeTarget "EKTilesMakerDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D9994B11189AE4E700DC6BC3 /* Debug */,
-				D9994B12189AE4E700DC6BC3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
