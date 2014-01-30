@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9994AE5189AE4E700DC6BC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AE4189AE4E700DC6BC3 /* Foundation.framework */; };
+		D9994AE7189AE4E700DC6BC3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AE6189AE4E700DC6BC3 /* CoreGraphics.framework */; };
+		D9994AE9189AE4E700DC6BC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AE8189AE4E700DC6BC3 /* UIKit.framework */; };
+		D9994AEF189AE4E700DC6BC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9994AED189AE4E700DC6BC3 /* InfoPlist.strings */; };
+		D9994AF1189AE4E700DC6BC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9994AF0189AE4E700DC6BC3 /* main.m */; };
+		D9994AF5189AE4E700DC6BC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9994AF4189AE4E700DC6BC3 /* AppDelegate.m */; };
+		D9994AF7189AE4E700DC6BC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9994AF6189AE4E700DC6BC3 /* Images.xcassets */; };
+		D9994AFE189AE4E700DC6BC3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AFD189AE4E700DC6BC3 /* XCTest.framework */; };
+		D9994AFF189AE4E700DC6BC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AE4189AE4E700DC6BC3 /* Foundation.framework */; };
+		D9994B00189AE4E700DC6BC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9994AE8189AE4E700DC6BC3 /* UIKit.framework */; };
+		D9994B08189AE4E700DC6BC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9994B06189AE4E700DC6BC3 /* InfoPlist.strings */; };
+		D9994B0A189AE4E700DC6BC3 /* EKTilesMakerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9994B09189AE4E700DC6BC3 /* EKTilesMakerDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9994B01189AE4E700DC6BC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9994AD9189AE4E700DC6BC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9994AE0189AE4E700DC6BC3;
+			remoteInfo = EKTilesMakerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9994AE1189AE4E700DC6BC3 /* EKTilesMakerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EKTilesMakerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9994AE4189AE4E700DC6BC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D9994AE6189AE4E700DC6BC3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D9994AE8189AE4E700DC6BC3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D9994AEC189AE4E700DC6BC3 /* EKTilesMakerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EKTilesMakerDemo-Info.plist"; sourceTree = "<group>"; };
+		D9994AEE189AE4E700DC6BC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D9994AF0189AE4E700DC6BC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9994AF2189AE4E700DC6BC3 /* EKTilesMakerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EKTilesMakerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		D9994AF3189AE4E700DC6BC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D9994AF4189AE4E700DC6BC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D9994AF6189AE4E700DC6BC3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D9994AFC189AE4E700DC6BC3 /* EKTilesMakerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EKTilesMakerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9994AFD189AE4E700DC6BC3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D9994B05189AE4E700DC6BC3 /* EKTilesMakerDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EKTilesMakerDemoTests-Info.plist"; sourceTree = "<group>"; };
+		D9994B07189AE4E700DC6BC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D9994B09189AE4E700DC6BC3 /* EKTilesMakerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EKTilesMakerDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9994ADE189AE4E700DC6BC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9994AE7189AE4E700DC6BC3 /* CoreGraphics.framework in Frameworks */,
+				D9994AE9189AE4E700DC6BC3 /* UIKit.framework in Frameworks */,
+				D9994AE5189AE4E700DC6BC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9994AF9189AE4E700DC6BC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9994AFE189AE4E700DC6BC3 /* XCTest.framework in Frameworks */,
+				D9994B00189AE4E700DC6BC3 /* UIKit.framework in Frameworks */,
+				D9994AFF189AE4E700DC6BC3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9994AD8189AE4E700DC6BC3 = {
+			isa = PBXGroup;
+			children = (
+				D9994AEA189AE4E700DC6BC3 /* EKTilesMakerDemo */,
+				D9994B03189AE4E700DC6BC3 /* EKTilesMakerDemoTests */,
+				D9994AE3189AE4E700DC6BC3 /* Frameworks */,
+				D9994AE2189AE4E700DC6BC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9994AE2189AE4E700DC6BC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9994AE1189AE4E700DC6BC3 /* EKTilesMakerDemo.app */,
+				D9994AFC189AE4E700DC6BC3 /* EKTilesMakerDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9994AE3189AE4E700DC6BC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9994AE4189AE4E700DC6BC3 /* Foundation.framework */,
+				D9994AE6189AE4E700DC6BC3 /* CoreGraphics.framework */,
+				D9994AE8189AE4E700DC6BC3 /* UIKit.framework */,
+				D9994AFD189AE4E700DC6BC3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9994AEA189AE4E700DC6BC3 /* EKTilesMakerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D9994AF3189AE4E700DC6BC3 /* AppDelegate.h */,
+				D9994AF4189AE4E700DC6BC3 /* AppDelegate.m */,
+				D9994AF6189AE4E700DC6BC3 /* Images.xcassets */,
+				D9994AEB189AE4E700DC6BC3 /* Supporting Files */,
+			);
+			path = EKTilesMakerDemo;
+			sourceTree = "<group>";
+		};
+		D9994AEB189AE4E700DC6BC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9994AEC189AE4E700DC6BC3 /* EKTilesMakerDemo-Info.plist */,
+				D9994AED189AE4E700DC6BC3 /* InfoPlist.strings */,
+				D9994AF0189AE4E700DC6BC3 /* main.m */,
+				D9994AF2189AE4E700DC6BC3 /* EKTilesMakerDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9994B03189AE4E700DC6BC3 /* EKTilesMakerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9994B09189AE4E700DC6BC3 /* EKTilesMakerDemoTests.m */,
+				D9994B04189AE4E700DC6BC3 /* Supporting Files */,
+			);
+			path = EKTilesMakerDemoTests;
+			sourceTree = "<group>";
+		};
+		D9994B04189AE4E700DC6BC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9994B05189AE4E700DC6BC3 /* EKTilesMakerDemoTests-Info.plist */,
+				D9994B06189AE4E700DC6BC3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9994AE0189AE4E700DC6BC3 /* EKTilesMakerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9994B0D189AE4E700DC6BC3 /* Build configuration list for PBXNativeTarget "EKTilesMakerDemo" */;
+			buildPhases = (
+				D9994ADD189AE4E700DC6BC3 /* Sources */,
+				D9994ADE189AE4E700DC6BC3 /* Frameworks */,
+				D9994ADF189AE4E700DC6BC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EKTilesMakerDemo;
+			productName = EKTilesMakerDemo;
+			productReference = D9994AE1189AE4E700DC6BC3 /* EKTilesMakerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9994AFB189AE4E700DC6BC3 /* EKTilesMakerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9994B10189AE4E700DC6BC3 /* Build configuration list for PBXNativeTarget "EKTilesMakerDemoTests" */;
+			buildPhases = (
+				D9994AF8189AE4E700DC6BC3 /* Sources */,
+				D9994AF9189AE4E700DC6BC3 /* Frameworks */,
+				D9994AFA189AE4E700DC6BC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9994B02189AE4E700DC6BC3 /* PBXTargetDependency */,
+			);
+			name = EKTilesMakerDemoTests;
+			productName = EKTilesMakerDemoTests;
+			productReference = D9994AFC189AE4E700DC6BC3 /* EKTilesMakerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9994AD9189AE4E700DC6BC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Evgeniy Kirpichenko";
+				TargetAttributes = {
+					D9994AFB189AE4E700DC6BC3 = {
+						TestTargetID = D9994AE0189AE4E700DC6BC3;
+					};
+				};
+			};
+			buildConfigurationList = D9994ADC189AE4E700DC6BC3 /* Build configuration list for PBXProject "EKTilesMakerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D9994AD8189AE4E700DC6BC3;
+			productRefGroup = D9994AE2189AE4E700DC6BC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9994AE0189AE4E700DC6BC3 /* EKTilesMakerDemo */,
+				D9994AFB189AE4E700DC6BC3 /* EKTilesMakerDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9994ADF189AE4E700DC6BC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9994AEF189AE4E700DC6BC3 /* InfoPlist.strings in Resources */,
+				D9994AF7189AE4E700DC6BC3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9994AFA189AE4E700DC6BC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9994B08189AE4E700DC6BC3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9994ADD189AE4E700DC6BC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9994AF5189AE4E700DC6BC3 /* AppDelegate.m in Sources */,
+				D9994AF1189AE4E700DC6BC3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9994AF8189AE4E700DC6BC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9994B0A189AE4E700DC6BC3 /* EKTilesMakerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9994B02189AE4E700DC6BC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9994AE0189AE4E700DC6BC3 /* EKTilesMakerDemo */;
+			targetProxy = D9994B01189AE4E700DC6BC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9994AED189AE4E700DC6BC3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9994AEE189AE4E700DC6BC3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D9994B06189AE4E700DC6BC3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9994B07189AE4E700DC6BC3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9994B0B189AE4E700DC6BC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D9994B0C189AE4E700DC6BC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9994B0E189AE4E700DC6BC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EKTilesMakerDemo/EKTilesMakerDemo-Prefix.pch";
+				INFOPLIST_FILE = "EKTilesMakerDemo/EKTilesMakerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D9994B0F189AE4E700DC6BC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EKTilesMakerDemo/EKTilesMakerDemo-Prefix.pch";
+				INFOPLIST_FILE = "EKTilesMakerDemo/EKTilesMakerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D9994B11189AE4E700DC6BC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EKTilesMakerDemo.app/EKTilesMakerDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EKTilesMakerDemo/EKTilesMakerDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EKTilesMakerDemoTests/EKTilesMakerDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D9994B12189AE4E700DC6BC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EKTilesMakerDemo.app/EKTilesMakerDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EKTilesMakerDemo/EKTilesMakerDemo-Prefix.pch";
+				INFOPLIST_FILE = "EKTilesMakerDemoTests/EKTilesMakerDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9994ADC189AE4E700DC6BC3 /* Build configuration list for PBXProject "EKTilesMakerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9994B0B189AE4E700DC6BC3 /* Debug */,
+				D9994B0C189AE4E700DC6BC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9994B0D189AE4E700DC6BC3 /* Build configuration list for PBXNativeTarget "EKTilesMakerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9994B0E189AE4E700DC6BC3 /* Debug */,
+				D9994B0F189AE4E700DC6BC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D9994B10189AE4E700DC6BC3 /* Build configuration list for PBXNativeTarget "EKTilesMakerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9994B11189AE4E700DC6BC3 /* Debug */,
+				D9994B12189AE4E700DC6BC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9994AD9189AE4E700DC6BC3 /* Project object */;
+}
