@@ -38,25 +38,11 @@ module CedarTargetEKTilesMakerUnitTests
       File.join(BUILD_DIR, CONFIGURATION + effective_platform_name)
     end
 
-    def is_run_unit_tests_deprecated?
-      system("cat #{xcode_developer_dir}/Tools/RunUnitTests | grep -q 'RunUnitTests is obsolete.'")
-    end
-
     def system_or_exit(cmd, stdout = nil)
       puts "Executing #{cmd}"
       cmd += " >#{stdout}" if stdout
       system(cmd) or raise "******** Build failed ********"
     end
-
-    def run_cmd_and_grep_for_failure(cmd)
-      puts "Executing #{cmd}"
-      puts result = %x[#{cmd} 2>&1]
-      if result.index(/Test Case.*failed/)
-        exit(1)
-      else
-        exit(0)
-      end
-    end 
 
     def with_env_vars(env_vars)
       old_values = {}
@@ -98,32 +84,25 @@ task :clean_EKTilesMakerUnitTests do
   CedarTargetEKTilesMakerUnitTests.system_or_exit "rm -rf #{CedarTargetEKTilesMakerUnitTests::BUILD_DIR}/*", CedarTargetEKTilesMakerUnitTests.output_file("clean")
 end
 
-desc "Build EKTilesMakerUnitTests OCUnit application specs"
+desc "Build EKTilesMakerUnitTests"
 task :build_EKTilesMakerUnitTests => :clean_EKTilesMakerUnitTests do
   CedarTargetEKTilesMakerUnitTests.kill_simulator
-  CedarTargetEKTilesMakerUnitTests.system_or_exit "pushd #{CedarTargetEKTilesMakerUnitTests::PROJECT_ROOT} && xcodebuild -target EKTilesMakerUnitTests -configuration #{CedarTargetEKTilesMakerUnitTests::CONFIGURATION} -sdk iphonesimulator#{CedarTargetEKTilesMakerUnitTests.deployment_target_sdk_version} build ARCHS=i386 TEST_AFTER_BUILD=NO GCC_SYMBOLS_PRIVATE_EXTERN=NO SYMROOT='#{CedarTargetEKTilesMakerUnitTests::BUILD_DIR}' && popd", CedarTargetEKTilesMakerUnitTests.output_file("EKTilesMakerUnitTests-AppBuild")
-  CedarTargetEKTilesMakerUnitTests.system_or_exit "pushd #{CedarTargetEKTilesMakerUnitTests::PROJECT_ROOT} && xcodebuild -target #{CedarTargetEKTilesMakerUnitTests::UI_SPECS_TARGET_NAME} -configuration #{CedarTargetEKTilesMakerUnitTests::CONFIGURATION} -sdk iphonesimulator#{CedarTargetEKTilesMakerUnitTests.deployment_target_sdk_version} build ARCHS=i386 GCC_SYMBOLS_PRIVATE_EXTERN=NO TEST_AFTER_BUILD=NO SYMROOT='#{CedarTargetEKTilesMakerUnitTests::BUILD_DIR}' && popd", CedarTargetEKTilesMakerUnitTests.output_file("EKTilesMakerUnitTests-SpecBuild")
+  CedarTargetEKTilesMakerUnitTests.system_or_exit "pushd #{CedarTargetEKTilesMakerUnitTests::PROJECT_ROOT} && xcodebuild -target #{CedarTargetEKTilesMakerUnitTests::UI_SPECS_TARGET_NAME} -configuration #{CedarTargetEKTilesMakerUnitTests::CONFIGURATION} -sdk iphonesimulator build ARCHS=i386 && popd", CedarTargetEKTilesMakerUnitTests.output_file("EKTilesMakerUnitTests")
 end
 
-desc "Run EKTilesMakerUnitTests OCUnit application specs"
+desc "Run EKTilesMakerUnitTests"
 task :EKTilesMakerUnitTests => :build_EKTilesMakerUnitTests do
-  if CedarTargetEKTilesMakerUnitTests.is_run_unit_tests_deprecated?
-    CedarTargetEKTilesMakerUnitTests.run_cmd_and_grep_for_failure "pushd #{CedarTargetEKTilesMakerUnitTests::PROJECT_ROOT} && xcodebuild test -scheme EKTilesMakerUnitTests -configuration #{CedarTargetEKTilesMakerUnitTests::CONFIGURATION} -destination 'OS=#{CedarTargetEKTilesMakerUnitTests.deployment_target_sdk_version},name=iPhone Retina (3.5-inch)' ARCHS=i386 SYMROOT='#{CedarTargetEKTilesMakerUnitTests::BUILD_DIR}' && popd"
-  else
-    env_vars = {
-      "DYLD_ROOT_PATH" => CedarTargetEKTilesMakerUnitTests.deployment_target_sdk_dir,
-      "DYLD_INSERT_LIBRARIES" => "#{CedarTargetEKTilesMakerUnitTests.xcode_developer_dir}/Library/PrivateFrameworks/IDEBundleInjection.framework/IDEBundleInjection",
-      "DYLD_FALLBACK_LIBRARY_PATH" => CedarTargetEKTilesMakerUnitTests.deployment_target_sdk_dir,
-      "XCInjectBundle" => "#{File.join(CedarTargetEKTilesMakerUnitTests.build_dir("-iphonesimulator"), "#{CedarTargetEKTilesMakerUnitTests::UI_SPECS_TARGET_NAME}.octest")}",
-      "XCInjectBundleInto" => "#{File.join(CedarTargetEKTilesMakerUnitTests.build_dir("-iphonesimulator"), "EKTilesMakerUnitTests.app/EKTilesMakerUnitTests")}",
-      "IPHONE_SIMULATOR_ROOT" => CedarTargetEKTilesMakerUnitTests.deployment_target_sdk_dir,
-      "CFFIXED_USER_HOME" => Dir.tmpdir,
-      "CEDAR_HEADLESS_SPECS" => "1",
-      "CEDAR_REPORTER_CLASS" => "CDRColorizedReporter",
-    }
+  env_vars = {
+    "DYLD_ROOT_PATH" => CedarTargetEKTilesMakerUnitTests.deployment_target_sdk_dir,
+    "IPHONE_SIMULATOR_ROOT" => CedarTargetEKTilesMakerUnitTests.deployment_target_sdk_dir,
+    "CFFIXED_USER_HOME" => Dir.tmpdir,
+    "CEDAR_HEADLESS_SPECS" => "1",
+    "CEDAR_REPORTER_CLASS" => "CDRColorizedReporter"
+  }
 
-    CedarTargetEKTilesMakerUnitTests.with_env_vars(env_vars) do
-      CedarTargetEKTilesMakerUnitTests.run_cmd_and_grep_for_failure "#{File.join(CedarTargetEKTilesMakerUnitTests.build_dir("-iphonesimulator"), "EKTilesMakerUnitTests.app/EKTilesMakerUnitTests")} -RegisterForSystemEvents -SenTest All"
-    end
+  app_path = File.join(CedarTargetEKTilesMakerUnitTests.build_dir("-iphonesimulator"), "#{CedarTargetEKTilesMakerUnitTests::UI_SPECS_TARGET_NAME}.app")
+
+  CedarTargetEKTilesMakerUnitTests.with_env_vars(env_vars) do
+    CedarTargetEKTilesMakerUnitTests.system_or_exit "#{File.join(CedarTargetEKTilesMakerUnitTests.build_dir("-iphonesimulator"), "#{CedarTargetEKTilesMakerUnitTests::UI_SPECS_TARGET_NAME}.app", CedarTargetEKTilesMakerUnitTests::UI_SPECS_TARGET_NAME)} -RegisterForSystemEvents";
   end
 end
