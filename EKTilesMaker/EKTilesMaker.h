@@ -18,13 +18,14 @@ typedef NS_ENUM(NSInteger, OutputFileType)
 
 - (void)createTiles;
 
-@property (nonatomic) UIImage *sourceImage;
-
-@property (nonatomic) NSArray *scaleSizes;
-@property (nonatomic) CGSize tileSize;
-
+@property (nonatomic) NSString *sourceImagePath;
 @property (nonatomic) NSString *outputFolderPath;
 @property (nonatomic) NSString *outputFileName;
+
+@property (nonatomic) NSArray *zoomLevels;
+@property (nonatomic) CGSize tileSize;
 @property (nonatomic) OutputFileType outputFileType;
+
+@property (nonatomic, copy) void(^completionBlock)();
 
 @end
