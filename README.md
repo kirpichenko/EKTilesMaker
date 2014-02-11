@@ -32,15 +32,15 @@ You can find example of tiles usage in `EKTilesMakerDemo` project that is very s
 Original image from demo project can be sliced onto 6 parts for 0.125 zoom level and 256x256 tiles size.
 
 ####Original image
-![screenshot#1](https://github.com/kirpichenko/EKTilesMaker/blob/master/EKtilesMakerDemo/EKtilesMakerDemo/Resources/photo_small.jpg)
+![screenshot#1](https://github.com/kirpichenko/EKTilesMaker/blob/master/EKtilesMakerDemo/EKtilesMakerDemo/Resources/photo_small.jpg?raw=true)
 
 ####Tiles
-![screenshot#2](https://github.com/kirpichenko/EKTilesMaker/README/tile_125_0_0.png) 
-![screenshot#3](https://github.com/kirpichenko/EKTilesMaker/README/tile_125_0_1.png)
-![screenshot#4](https://github.com/kirpichenko/EKTilesMaker/README/tile_125_0_2.png)
-![screenshot#5](https://github.com/kirpichenko/EKTilesMaker/README/tile_125_1_0.png) 
-![screenshot#6](https://github.com/kirpichenko/EKTilesMaker/README/tile_125_1_1.png)
-![screenshot#7](https://github.com/kirpichenko/EKTilesMaker/README/tile_125_1_2.png)
+![screenshot#2](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_0_0.png?raw=true) 
+![screenshot#3](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_0_1.png?raw=true)
+![screenshot#4](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_0_2.png?raw=true)
+![screenshot#5](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_1_0.png?raw=true) 
+![screenshot#6](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_1_1.png?raw=true)
+![screenshot#7](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_1_2.png?raw=true)
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kirpichenko/ektilesmaker/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
