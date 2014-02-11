@@ -9,10 +9,10 @@ You can find example of tiles usage in `EKTilesMakerDemo` project that is very s
 2. Provide source image file and output folder paths.
 3. Set tile name.
 4. Add zoom levels for which tiles should be created.
-5. Set tiles size and format
+5. Set tiles size and format.
 6. Provide completion block.
-7. Call `createTiles` method. 
-8. Get your tiles from output folder
+7. Call `createTiles` method.
+8. Get your tiles from output folder.
 <pre><code>  
 	EKTilesMaker *tilesMaker = [EKTilesMaker new];  
 	
@@ -29,7 +29,7 @@ You can find example of tiles usage in `EKTilesMakerDemo` project that is very s
 </code></pre>  
   
 ##Example  
-Original image from demo project can be sliced on 6 part for 0.125 zoom level and 256x256 tiles size.
+Original image from demo project can be sliced onto 6 parts for 0.125 zoom level and 256x256 tiles size.
 
 ####Original image
 ![screenshot#1](https://github.com/kirpichenko/EKTilesMaker/EKTilesMakerDemo/EKTilesMakerDemo/Resources/photo_small.jpg)
@@ -43,3 +43,4 @@ Original image from demo project can be sliced on 6 part for 0.125 zoom level an
 ![screenshot#7](https://github.com/kirpichenko/EKTilesMaker/README/tile_125_1_2.png)
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kirpichenko/ektilesmaker/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
