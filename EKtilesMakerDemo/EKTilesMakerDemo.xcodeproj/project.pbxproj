@@ -21,6 +21,9 @@
 		D9994AF1189AE4E700DC6BC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9994AF0189AE4E700DC6BC3 /* main.m */; };
 		D9994AF5189AE4E700DC6BC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9994AF4189AE4E700DC6BC3 /* AppDelegate.m */; };
 		D9994AF7189AE4E700DC6BC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9994AF6189AE4E700DC6BC3 /* Images.xcassets */; };
+		D9B3BB5818AA154E0094914B /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B3BB5618AA154E0094914B /* PhotoViewController.m */; };
+		D9B3BB5918AA154E0094914B /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B3BB5718AA154E0094914B /* PhotoViewController.xib */; };
+		D9B3BB6218AA16F90094914B /* TilingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B3BB6118AA16F90094914B /* TilingView.m */; };
 		D9B710B418A8F687002AE681 /* photo_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9B710B218A8F687002AE681 /* photo_large.jpg */; };
 		D9B710B518A8F687002AE681 /* photo_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9B710B318A8F687002AE681 /* photo_small.jpg */; };
 		D9B710BA18A8F71A002AE681 /* EKTilesMakerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = D9B710B818A8F71A002AE681 /* EKTilesMakerSpec.mm */; };
@@ -51,6 +54,11 @@
 		D9994AF3189AE4E700DC6BC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D9994AF4189AE4E700DC6BC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D9994AF6189AE4E700DC6BC3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D9B3BB5518AA154E0094914B /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		D9B3BB5618AA154E0094914B /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		D9B3BB5718AA154E0094914B /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
+		D9B3BB6018AA16F90094914B /* TilingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TilingView.h; sourceTree = "<group>"; };
+		D9B3BB6118AA16F90094914B /* TilingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TilingView.m; sourceTree = "<group>"; };
 		D9B710B218A8F687002AE681 /* photo_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo_large.jpg; sourceTree = "<group>"; };
 		D9B710B318A8F687002AE681 /* photo_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo_small.jpg; path = EKTilesMakerDemo/Resources/photo_small.jpg; sourceTree = SOURCE_ROOT; };
 		D9B710B818A8F71A002AE681 /* EKTilesMakerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EKTilesMakerSpec.mm; sourceTree = "<group>"; };
@@ -160,8 +168,9 @@
 		D9994AEA189AE4E700DC6BC3 /* EKTilesMakerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D9994AF3189AE4E700DC6BC3 /* AppDelegate.h */,
-				D9994AF4189AE4E700DC6BC3 /* AppDelegate.m */,
+				D9B3BB5A18AA15550094914B /* Application */,
+				D9B3BB5B18AA155A0094914B /* View Controllers */,
+				D9B3BB5C18AA15C80094914B /* Views */,
 				D9994AF6189AE4E700DC6BC3 /* Images.xcassets */,
 				D95D04D618A0220800C4FD70 /* Resources */,
 				D9994AEB189AE4E700DC6BC3 /* Supporting Files */,
@@ -178,6 +187,34 @@
 				D9994AF2189AE4E700DC6BC3 /* EKTilesMakerDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9B3BB5A18AA15550094914B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D9994AF3189AE4E700DC6BC3 /* AppDelegate.h */,
+				D9994AF4189AE4E700DC6BC3 /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		D9B3BB5B18AA155A0094914B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9B3BB5518AA154E0094914B /* PhotoViewController.h */,
+				D9B3BB5618AA154E0094914B /* PhotoViewController.m */,
+				D9B3BB5718AA154E0094914B /* PhotoViewController.xib */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D9B3BB5C18AA15C80094914B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9B3BB6018AA16F90094914B /* TilingView.h */,
+				D9B3BB6118AA16F90094914B /* TilingView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		D9B710B618A8F68C002AE681 /* Resources */ = {
@@ -296,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9B710B518A8F687002AE681 /* photo_small.jpg in Resources */,
+				D9B3BB5918AA154E0094914B /* PhotoViewController.xib in Resources */,
 				D9994AEF189AE4E700DC6BC3 /* InfoPlist.strings in Resources */,
 				D9B710B418A8F687002AE681 /* photo_large.jpg in Resources */,
 				D9994AF7189AE4E700DC6BC3 /* Images.xcassets in Resources */,
@@ -356,8 +394,10 @@
 			files = (
 				D9994AF5189AE4E700DC6BC3 /* AppDelegate.m in Sources */,
 				D95D04BD18A01BC600C4FD70 /* EKTilesMaker.m in Sources */,
+				D9B3BB6218AA16F90094914B /* TilingView.m in Sources */,
 				D9B710BE18A8F72E002AE681 /* UIImage+EKTilesMaker.m in Sources */,
 				D9994AF1189AE4E700DC6BC3 /* main.m in Sources */,
+				D9B3BB5818AA154E0094914B /* PhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
