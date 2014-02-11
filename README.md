@@ -35,11 +35,11 @@ Original image from demo project can be sliced onto 6 parts for 0.125 zoom level
 ![Alt text](https://github.com/kirpichenko/EKTilesMaker/blob/master/EKtilesMakerDemo/EKtilesMakerDemo/Resources/photo_small.jpg?raw=true)
 
 ####Tiles
-![Alt text](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_0_0.png?raw=true) 
-![Alt text](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_0_1.png?raw=true)
-![Alt text](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_0_2.png?raw=true)
-![Alt text](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_1_0.png?raw=true) 
-![Alt text](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_1_1.png?raw=true)
+![Alt text](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_0_0.png?raw=true).
+![Alt text](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_0_1.png?raw=true).
+![Alt text](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_0_2.png?raw=true)  
+![Alt text](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_1_0.png?raw=true).
+![Alt text](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_1_1.png?raw=true).
 ![Alt text](https://github.com/kirpichenko/EKTilesMaker/blob/master/README/tile_125_1_2.png?raw=true)
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kirpichenko/ektilesmaker/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
