@@ -32,7 +32,7 @@ You can find example of tiles usage in `EKTilesMakerDemo` project that is very s
 Original image from demo project can be sliced onto 6 parts for 0.125 zoom level and 256x256 tiles size.
 
 ####Original image
-![screenshot#1](https://github.com/kirpichenko/EKTilesMaker/EKTilesMakerDemo/EKTilesMakerDemo/Resources/photo_small.jpg)
+![screenshot#1](https://github.com/kirpichenko/EKTilesMaker/blob/master/EKtilesMakerDemo/EKtilesMakerDemo/Resources/photo_small.jpg)
 
 ####Tiles
 ![screenshot#2](https://github.com/kirpichenko/EKTilesMaker/README/tile_125_0_0.png) 
