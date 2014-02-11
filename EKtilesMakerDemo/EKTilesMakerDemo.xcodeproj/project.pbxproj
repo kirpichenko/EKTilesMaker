@@ -21,6 +21,7 @@
 		D9994AF1189AE4E700DC6BC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9994AF0189AE4E700DC6BC3 /* main.m */; };
 		D9994AF5189AE4E700DC6BC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9994AF4189AE4E700DC6BC3 /* AppDelegate.m */; };
 		D9994AF7189AE4E700DC6BC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9994AF6189AE4E700DC6BC3 /* Images.xcassets */; };
+		D9A6049818AA78D600676C7D /* photo_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D9B710B318A8F687002AE681 /* photo_small.jpg */; };
 		D9B3BB5818AA154E0094914B /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B3BB5618AA154E0094914B /* PhotoViewController.m */; };
 		D9B3BB5918AA154E0094914B /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B3BB5718AA154E0094914B /* PhotoViewController.xib */; };
 		D9B3BB6218AA16F90094914B /* TilingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B3BB6118AA16F90094914B /* TilingView.m */; };
@@ -324,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A6049818AA78D600676C7D /* photo_small.jpg in Resources */,
 				D95D04E618A02F6F00C4FD70 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,10 +432,7 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/kirpichenko/Projects/EKTilesMaker/EKTilesMakerDemo/EKTilesMakerUnitTests/Frameworks,
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EKTilesMakerUnitTests/EKTilesMakerUnitTests-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -459,10 +458,7 @@
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/kirpichenko/Projects/EKTilesMaker/EKTilesMakerDemo/EKTilesMakerUnitTests/Frameworks,
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EKTilesMakerUnitTests/EKTilesMakerUnitTests-Prefix.pch";
 				INFOPLIST_FILE = "EKTilesMakerUnitTests/EKTilesMakerUnitTests-Info.plist";
