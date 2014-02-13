@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kirpichenko/EKTilesMaker.png?branch=master)](https://travis-ci.org/kirpichenko/EKTilesMaker)  
+
 ##EKTilesMaker
 Simple iOS utility that slices provided original image onto tiles. Tiles may be used for displaying large images on different detalization levels.
 
