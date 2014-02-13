@@ -9,4 +9,4 @@ before_script:
 - cd EKTilesMakerDemo
 
 script:
-- ios_ci cedar --source-root $TRAVIS_BUILD_DIR/EKTilesMakerDemo --workspace EKTilesMakerDemo.xcworkspace --scheme EKTilesMakerUnitTests --build-path Build/Products --configuration Debug
+- ios_ci cedar --source-root ./ --workspace EKTilesMakerDemo.xcworkspace --scheme EKTilesMakerUnitTests --build-path Build/Products
